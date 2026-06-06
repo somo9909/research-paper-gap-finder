@@ -32,7 +32,6 @@
 |-----------|-------------------------|
 | Frontend  | React + Vite + CSS      |
 | Backend   | FastAPI (Python)        |
-| AI Model  | Llama 3.3 70B via Groq  |
 | PDF Parse | PyPDF                   |
 
 ---
