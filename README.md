@@ -37,33 +37,44 @@
 ---
 
 ## 📁 Project Structure
+```
 Research_Paper_Gap_Finder/
+│
 ├── backend/
-│   ├── app.py                  # FastAPI server
-│   ├── config.py               # Groq API key
-│   ├── uploads/                # Uploaded PDFs stored here
+│   ├── app.py                      # FastAPI server
+│   ├── config.py                   # Groq API key
+│   ├── uploads/                    # Uploaded PDFs stored here
 │   └── services/
-│       ├── pdf_parser.py       # Extracts text from PDFs
-│       ├── summarizer.py       # Generates paper summaries
-│       ├── gap_finder.py       # Finds research gaps
-│       └── literature_review.py# Generates literature review
+│       ├── pdf_parser.py           # Extracts text from PDFs
+│       ├── summarizer.py           # Generates paper summaries
+│       ├── gap_finder.py           # Finds research gaps
+│       └── literature_review.py    # Generates literature review
+│
 └── frontend/
-├── public/
-│   ├── homepage.png
-│   └── upload.png
-└── src/
-├── App.jsx
-├── App.css
-├── index.js
-├── index.css
-└── components/
-├── Hero.jsx / Hero.css
-├── UploadSection.jsx / UploadSection.css
-├── SummarySection.jsx / SummarySection.css
-├── LiteratureReview.jsx / LiteratureReview.css
-├── ResearchGaps.jsx / ResearchGaps.css
-├── Analytics.jsx / Analytics.css
-└── LoadingScreen.jsx / LoadingScreen.css
+    ├── public/
+    │   ├── homepage.png
+    │   └── upload.png
+    └── src/
+        ├── App.jsx
+        ├── App.css
+        ├── index.js
+        ├── index.css
+        └── components/
+            ├── Hero.jsx
+            ├── Hero.css
+            ├── UploadSection.jsx
+            ├── UploadSection.css
+            ├── SummarySection.jsx
+            ├── SummarySection.css
+            ├── LiteratureReview.jsx
+            ├── LiteratureReview.css
+            ├── ResearchGaps.jsx
+            ├── ResearchGaps.css
+            ├── Analytics.jsx
+            ├── Analytics.css
+            ├── LoadingScreen.jsx
+            └── LoadingScreen.css
+```
 
 ---
 
