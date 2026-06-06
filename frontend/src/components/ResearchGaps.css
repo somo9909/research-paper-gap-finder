@@ -1,0 +1,8 @@
+.gap-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0.62em;
+  width: 5px; height: 5px;
+  background: var(--bullet-color, var(--gap-color));
+  border-radius: 50%;
+}
