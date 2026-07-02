@@ -33,16 +33,37 @@ export default function App() {
     const formData = new FormData();
     formData.append('file', file);
     try {
-      const res = await fetch(`${API_BASE}/upload`, {
-        method: 'POST',
-        body: formData,
-      });
-      const data = await res.json();
-      setUploadedFiles((prev) => [...prev, data.filename]);
-      setSummaries((prev) => [...prev, { filename: data.filename, summary: data.summary }]);
-      setActiveTab('summary');
-    } catch (err) {
-      alert('Upload failed. Make sure the backend is running at https://research-paper-gap-finder.onrender.com');
+  const res = await fetch(`${API_BASE}/upload`, {
+    method: "POST",
+    body: formData,
+  });
+
+  console.log("Status:", res.status);
+  console.log("OK:", res.ok);
+
+  const data = await res.json();
+  console.log(data);
+
+  if (!res.ok) {
+    throw new Error(data.error || "Upload failed");
+  }
+
+  setUploadedFiles((prev) => [...prev, data.filename]);
+
+  setSummaries((prev) => [
+    ...prev,
+    {
+      filename: data.filename,
+      summary: data.summary,
+    },
+  ]);
+
+  setActiveTab("summary");
+
+} catch (err) {
+  console.error(err);
+  alert(err.message);
+}
     } finally {
       setLoading(false);
     }
