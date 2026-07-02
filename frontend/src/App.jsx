@@ -63,7 +63,7 @@ export default function App() {
 } catch (err) {
   console.error(err);
   alert(err.message);
-}
+
     } finally {
       setLoading(false);
     }
