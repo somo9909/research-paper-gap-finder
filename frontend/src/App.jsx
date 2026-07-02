@@ -42,7 +42,7 @@ export default function App() {
       setSummaries((prev) => [...prev, { filename: data.filename, summary: data.summary }]);
       setActiveTab('summary');
     } catch (err) {
-      alert('Upload failed. Make sure the backend is running at http://localhost:8000');
+      alert('Upload failed. Make sure the backend is running at https://research-paper-gap-finder.onrender.com');
     } finally {
       setLoading(false);
     }
