@@ -8,7 +8,7 @@ import ResearchGaps from './components/ResearchGaps';
 import Analytics from './components/Analytics';
 import LoadingScreen from './components/LoadingScreen';
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = 'https://research-paper-gap-finder.onrender.com';
 
 export default function App() {
   const [uploadedFiles, setUploadedFiles] = useState([]);
