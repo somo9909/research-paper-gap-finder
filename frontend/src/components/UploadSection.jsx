@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import './UploadSection.css';
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = 'https://research-paper-gap-finder.onrender.com';
 
 export default function UploadSection({ onUpload, onAnalyzeAll, uploadedFiles, onDelete }) {
   const [dragOver, setDragOver] = useState(false);
